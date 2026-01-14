@@ -1,0 +1,6 @@
+.card-title{font-weight:600}
+.card-project img{object-fit:cover;height:180px}
+.card-project{border-radius:0.75rem;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.card-project:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(16,24,40,0.12)}
+.card-text{line-height:1.4}
+.badge{font-weight:600}

@@ -1,0 +1,48 @@
+/* Glass Effect Base */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section Layout */
+.hero-container {
+  height: 100vh; /* full screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin: 10px 0 20px;
+}
+
+.btn-glass {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+

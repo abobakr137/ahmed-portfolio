@@ -1,0 +1,43 @@
+import { Component, HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-navbar',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
+})
+export class NavbarComponent {
+  private readonly navbarHeight = 72; // Adjust this based on your navbar height
+  currentSection = 'home';
+
+  scrollTo(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offsetTop = element.offsetTop - this.navbarHeight;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+      this.currentSection = sectionId;
+    }
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll() {
+    const sections = ['home', 'projects', 'skills', 'contact'];
+    const currentPos = window.scrollY + this.navbarHeight + 10;
+
+    for (const section of sections) {
+      const element = document.getElementById(section);
+      if (element) {
+        const { offsetTop, offsetHeight } = element;
+        if (currentPos >= offsetTop && currentPos < offsetTop + offsetHeight) {
+          this.currentSection = section;
+          break;
+        }
+      }
+    }
+  }
+}

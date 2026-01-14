@@ -1,0 +1,10 @@
+
+footer {
+	background: #fff;
+	color: var(--muted);
+	border-top: 1px solid #e5e7eb;
+	font-size: 1rem;
+	padding: 1.5rem 0;
+	margin-top: 2rem;
+	transition: background 0.3s, color 0.3s;
+}

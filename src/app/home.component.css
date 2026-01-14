@@ -1,0 +1,43 @@
+
+/* Home hero glassmorphism styles */
+.display-5 {
+	color: var(--text);
+	text-shadow: 0 4px 30px rgba(0,0,0,0.6);
+}
+
+.lead {
+	color: var(--text-muted);
+	font-size: 1.15rem;
+}
+
+.glass-container {
+	padding: 2.25rem;
+	border-radius: 1.25rem;
+}
+
+.glass-container img {
+	border: 6px solid rgba(255,255,255,0.04);
+}
+
+.btn-outline-light {
+	color: #fff;
+	border-color: rgba(255,255,255,0.12);
+	background: transparent;
+	transition: all 0.25s ease;
+}
+
+.btn-outline-light:hover {
+	background: rgba(255,255,255,0.06);
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(124,58,237,0.12);
+}
+
+@media (max-width: 768px) {
+	.display-5 { font-size: 1.75rem; }
+	.glass-container { padding: 1.25rem; }
+	.glass-container img { width: 140px; height:140px; }
+}
+
+@media (min-width: 769px) {
+	.glass-container img { width: 180px; height:180px; }
+}

@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg fixed-top glass-navbar">
+  <div class="container">
+    <a class="navbar-brand me-3" (click)="go('home')">Ahmed Bakr</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-center">
+
+        <li class="nav-item">
+          <a class="nav-link" 
+             [class.active]="currentSection === 'home'"
+             (click)="go('home')">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" 
+             [class.active]="currentSection === 'projects'"
+             (click)="go('projects')">
+            Projects
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" 
+             [class.active]="currentSection === 'skills'"
+             (click)="go('skills')">
+            Skills
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" 
+             [class.active]="currentSection === 'contact'"
+             (click)="go('contact')">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>

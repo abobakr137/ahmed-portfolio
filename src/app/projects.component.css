@@ -1,0 +1,33 @@
+.card-project .card-title { font-weight: 600; }
+.badge{ opacity: 0.9; }
+.project-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #7c4dff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.project-card .card-title {
+  font-weight: 600;
+}
+
+.project-card .card-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+}
+
+.project-tag {
+  background: rgba(124, 77, 255, 0.15);
+  color: #bda7ff;
+  border: 1px solid rgba(124, 77, 255, 0.4);
+  font-size: 0.75rem;
+}
+

@@ -1,0 +1,98 @@
+
+<!-- Hero Section (glassmorphism) -->
+<section id="home" class="py-5">
+  <div class="container">
+    <div class="glass-container d-flex align-items-center py-4">
+      <div class="row w-100 g-4 align-items-center">
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <h1 class="display-5 fw-bold mb-3 reveal delay-1">Hi, I’m Ahmed</h1>
+          <p class="lead mb-4 reveal delay-2">I build fast, accessible, and delightful web interfaces using Angular, Bootstrap and modern tooling.</p>
+          <div class="d-flex justify-content-center justify-content-md-start gap-2">
+            <button class="btn btn-primary btn-lg" (click)="scrollTo('projects')" aria-label="View Projects">View Projects</button>
+            <button class="btn btn-outline-light btn-lg" (click)="scrollTo('contact')" aria-label="Contact">Contact</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 text-center">
+          <img src="assets/images/bakr.jpg"
+           alt="Bakr profile"
+           class="img-fluid rounded-circle"
+           style="width: 250px; height: 250px; object-fit: cover;" />
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- About Section -->
+<section class="container py-5 mb-5" id="about">
+  <div class="row align-items-center">
+    <div class="col-md-8">
+      <h2 class="fw-bold mb-3 reveal delay-1">About Me</h2>
+      <p class="mb-3 reveal delay-2">I'm a passionate frontend engineer focused on performance, accessibility, and clear UX. I love building modern web apps and design systems, and enjoy learning new frameworks to help projects ship faster.</p>
+      <div class="d-flex flex-wrap gap-4 align-items-center mt-4">
+        <span class="d-flex align-items-center"><i class="bi bi-code-slash fs-3 text-primary me-2 reveal delay-1"></i>Angular</span>
+        <span class="d-flex align-items-center"><i class="bi bi-bootstrap fs-3 text-primary me-2 reveal delay-2"></i>Bootstrap</span>
+        <span class="d-flex align-items-center"><i class="bi bi-filetype-tsx fs-3 text-primary me-2 reveal delay-3"></i>TypeScript</span>
+        <span class="d-flex align-items-center"><i class="bi bi-palette fs-3 text-primary me-2 reveal delay-4"></i>UI/UX</span>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Projects Preview Section -->
+<section class="container py-5 mb-5" id="projects">
+  <h2 class="fw-bold mb-4 text-center reveal delay-1">Featured Projects</h2>
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-4">
+      <div class="card card-project h-100 shadow-sm">
+        <img src="/assets/images/portfolio-home.png" class="card-img-top" alt="Project 1">
+        <div class="card-body">
+          <h5 class="card-title reveal delay-2">Portfolio Website</h5>
+          <p class="card-text reveal delay-3">A modern, responsive portfolio built with Angular and Bootstrap.</p>
+          <a routerLink="/projects" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-project h-100 shadow-sm">
+  <img
+    src="/assets/images/rusty.png"
+    class="card-img-top"
+    alt="Rusty Leather Website"
+  >
+
+  <div class="card-body">
+    <h5 class="card-title reveal delay-2">
+      Rusty Leather
+    </h5>
+
+    <p class="card-text reveal delay-3">
+      A premium leather brand website showcasing handcrafted wallets and leather products with a modern, elegant user experience.
+    </p>
+
+    <a routerLink="/projects" class="stretched-link"></a>
+  </div>
+</div>
+
+    </div>
+    
+  </div>
+</section>
+
+<!-- Footer with Social Links (if not already in global footer) -->
+<!--
+<footer class="bg-white border-top py-4 mt-5">
+  <div class="container text-center">
+    <div class="mb-2">
+      <a href="https://github.com/ahmed" class="text-muted me-3" target="_blank" rel="noopener"><i class="bi bi-github fs-4"></i></a>
+      <a href="https://twitter.com/ahmed" class="text-muted me-3" target="_blank" rel="noopener"><i class="bi bi-twitter fs-4"></i></a>
+      <a href="https://linkedin.com/in/ahmed" class="text-muted" target="_blank" rel="noopener"><i class="bi bi-linkedin fs-4"></i></a>
+    </div>
+    <small class="text-muted">© 2025 Ahmed — Built with Angular & Bootstrap</small>
+  </div>
+</footer>
+-->

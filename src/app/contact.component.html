@@ -1,0 +1,75 @@
+<section class="container py-5" style="max-width:720px;">
+  <p class="muted text-center mb-4">
+    Want to work together? Send a message and I'll reply as soon as I can.
+  </p>
+
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+
+      @if (!submitted) {
+        <form (ngSubmit)="submit()">
+
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input
+              class="form-control"
+              [(ngModel)]="name"
+              name="name"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input
+              class="form-control"
+              [(ngModel)]="email"
+              name="email"
+              type="email"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              [(ngModel)]="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary w-100"
+            [disabled]="loading"
+          >
+            {{ loading ? 'Sending...' : 'Send Message' }}
+          </button>
+
+        </form>
+      }
+
+      @if (submitted) {
+        <div class="alert alert-success mt-4 text-center">
+          ✅ Message sent successfully. I’ll get back to you soon!
+        </div>
+      }
+
+      <div class="mt-5 text-center">
+        <a href="mailto:bakr@email.com" class="me-3 text-muted">
+          <i class="bi bi-envelope"></i>
+        </a>
+        <a href="https://github.com/bakr" target="_blank" class="me-3 text-muted">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/bakr" target="_blank" class="text-muted">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>

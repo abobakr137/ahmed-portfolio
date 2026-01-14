@@ -1,0 +1,50 @@
+<!-- Navbar الرئيسي -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="#home">Bakr</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- حذفنا الـ Hero المكرر اللي كان عامل مساحة فاضية -->
+
+
+<main class="mt-5 pt-4">
+
+  <!-- Home Section (واحدة بس) -->
+  <section id="home" class="pt-4">
+    <app-home-page></app-home-page>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="pt-5">
+    <app-projects-page></app-projects-page>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="pt-5">
+    <app-skills-page></app-skills-page>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="pt-5 pb-5">
+    <app-contact-page></app-contact-page>
+  </section>
+
+</main>
+
+<!-- Footer واحد فقط -->
+<app-footer></app-footer>
+
+<!-- شيلنا الـ router-outlet + footer المكرر + navbar المكرر -->
